@@ -20,12 +20,25 @@ body {
   -webkit-text-fill-color: transparent;
   padding: 80px 0 20px 0;
 }
+@media screen and (max-width: 545px) {
+  .header__title_sm {
+    font-size: 1rem;
+    margin: 15px;
+    padding: 10px;
+  }
+}
 .header__title {
   font-size: 3rem;
   line-height: 4rem;
   max-width: 845px;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (max-width: 545px) {
+  .header__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 .header__card {
   background-color: #fff;
@@ -42,11 +55,23 @@ body {
   width: 100%;
   padding: 40px;
 }
+@media screen and (max-width: 545px) {
+  .cards__wrap {
+    margin-top: 40px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
 .card__deck {
   color: #5c5c5c;
   line-height: 2rem;
 }
-
+@media screen and (max-width: 545px) {
+  .card__deck {
+    line-height: 1.5rem;
+  }
+}
 /*Header style end*/
 
 /*Main style start*/
@@ -59,16 +84,34 @@ body {
   padding: 60px 135px;
   gap: 60px;
 }
+@media screen and (max-width: 545px) {
+  .main {
+    display: grid;
+    padding: 30px 65px;
+  }
+}
 
 .main__block_title {
   color: #56565a;
   font-weight: 700;
   font-size: 2rem;
 }
+@media screen and (max-width: 545px) {
+  .main__block_title {
+    font-size: 1.5rem;
+  }
+}
 .main__block_deck {
   color: #56565a;
   line-height: 2rem;
 }
+
+@media screen and (max-width: 545px) {
+  .main__block_deck {
+    line-height: 1.5rem;
+  }
+}
+
 .btn__container {
   display: flex;
   flex-direction: row;
@@ -77,6 +120,11 @@ body {
   gap: 15px;
   margin-top: 30px;
 }
+@media screen and (max-width: 545px) {
+  .btn__container {
+    display: grid;
+  }
+}
 .main__btn {
   width: 140px;
   height: 45px;
@@ -84,11 +132,22 @@ body {
   color: #fff;
   border: none;
 }
+@media screen and (max-width: 545px) {
+  .main__btn {
+    width: 100px;
+  }
+}
 .main__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+@media screen and (max-width: 545px) {
+  .main__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .main__card_sm {
   display: flex;
@@ -131,33 +190,8 @@ body {
 /*Media style header start*/
 
 @media screen and (max-width: 545px) {
-  .header__title_sm {
-    font-size: 1rem;
-    margin: 15px;
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 545px) {
-  .header__title {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (max-width: 545px) {
-  .cards__wrap {
-    margin-top: 40px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 545px) {
   .card__title {
     font-size: 1rem;
-  }
-}
-@media screen and (max-width: 545px) {
-  .card__deck {
-    line-height: 1.5rem;
   }
 }
 
@@ -167,40 +201,6 @@ body {
 @media screen and (max-width: 545px) {
   .main__block {
     display: grid;
-  }
-}
-
-@media screen and (max-width: 545px) {
-  .main__block_title {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 545px) {
-  .main__block_deck {
-    line-height: 1.5rem;
-  }
-}
-@media screen and (max-width: 545px) {
-  .btn__container {
-    display: grid;
-  }
-}
-@media screen and (max-width: 545px) {
-  .main__btn {
-    width: 100px;
-  }
-}
-@media screen and (max-width: 545px) {
-  .main {
-    display: grid;
-    padding: 30px 65px;
-  }
-}
-
-@media screen and (max-width: 545px) {
-  .main__cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 
